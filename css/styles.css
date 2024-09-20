@@ -120,6 +120,7 @@ button {
 
 .nav-link.current {
   position: relative;
+  color: #404bbf;
 }
 
 .nav-link.current::after {
@@ -202,6 +203,8 @@ nav-link.current {
     ),
     url(../images/people-office.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-title {
@@ -230,6 +233,7 @@ nav-link.current {
   min-width: 169px;
   padding: 16px 32px;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover,
@@ -400,7 +404,11 @@ nav-link.current {
 
 .container.footer {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.container-footer-logo {
+  margin-right: 120px;
 }
 
 .footer-social-text {
@@ -413,8 +421,7 @@ nav-link.current {
 
 .footer-social-icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 16px;
   width: 208px;
   height: 40px;
@@ -441,6 +448,7 @@ nav-link.current {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-footer-social .social-link:hover {
+.container-footer-social .social-link:hover,
+.container-footer-social .social-link:focus {
   background-color: #31d0aa;
 }
