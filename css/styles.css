@@ -325,11 +325,11 @@ nav-link.current {
   border-radius: 50%;
 }
 
-.team-social .social-list-icon {
+.team-social-icon .social-list-icon {
   fill: #f4f4fd;
 }
 
-.team-social .social-link {
+.team-social-icon .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -340,7 +340,7 @@ nav-link.current {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social .social-link:hover {
+.team-social-icon .social-link:hover {
   background-color: #404bbf;
 }
 
